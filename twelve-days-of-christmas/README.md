@@ -1,7 +1,7 @@
-# Rust exercises
-Rust exercises, majority completed at the suggestion of [rust programming language book](https://doc.rust-lang.org/book/index.html)
+# Twelve days of christmas (in rust)
+Made at the suggestion of the [rust programming language book](https://doc.rust-lang.org/book/index.html)
 
-## How to run a rust project
+## How to run
 - Install [rust](https://doc.rust-lang.org/book/ch01-01-installation.html)
 - Install [cargo](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html)
 
@@ -12,5 +12,5 @@ $ cargo run
 
 Or run a release version by building and running directly
 ```bash
-$ cargo build --release && ./target/release/[PROGRAM_NAME]
+$ cargo build --release && ./target/release/christmas
 ```
