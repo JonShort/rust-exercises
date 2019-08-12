@@ -3,7 +3,10 @@ extern crate rand;
 use std::collections::HashMap;
 use rand::Rng;
 
+use std::time::{Instant};
+
 fn main() {
+    let now = Instant::now();
     let mut rng = rand::thread_rng();
 
     // populate a Vec with random numbers
@@ -28,6 +31,7 @@ fn main() {
     println!("mean: {:#?}", mean);
     println!("median: {:#?}", median);
     println!("mode: {:#?}", mode);
+    println!("program finished: {}s", now.elapsed().as_secs());
 }
 
 fn calculate_median(mut numbers: Vec<i32>) -> f32 {
